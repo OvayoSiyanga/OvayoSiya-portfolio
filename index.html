@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/first-ovayo-logo-veed-remove-background.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portflio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Software Developer</p>
+                <h1>Hello,I'm <br><span>Ovayo </span>Siyasanga Tshazibana <br> from South africa</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/20230913_113325.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I am Ovayo Siyanga Tshazibana, and I would like to present you my portfolio.</p>
+                    <br>
+                    <p>One of the main reasons I wanted to become a front-end developer is that I've always loved being creative and creating great website designs. Since I was a child, I've enjoyed designing things that look awesome and are super easy for people to use, ensuring they have a fantastic experience while browsing.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end</span><br>Designing Websites</li>
+                            <li><span>Web Development</span><br>websites and web applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023</span><br>Udemy The Complete Front-end Web Developer Course</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portflio -->
+    <div id="portflio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/book.webp" class="budget">
+                    <div class="layer">
+                        <h3>Cash Manger</h3>
+                        <p>Keep up,with all your payments and expenses!</p>
+                        <a href="#"><a href="https://ovayosiyanga.github.io/Budget-app/"><i class="fa-solid fa-up-right-from-square"></i></a></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/rock-paper-scissors.jpeg">
+                    <div class="layer">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>Bored? try this fun rock-paper-scissors website... will it be a win? lose? or tie!</p>
+                    <a href="#"><a href="https://ovayosiyanga.github.io/rock-paper-scissors-easy-game/"><i class="fa-solid fa-up-right-from-square"></i></a></a>
+                   </div>
+                   
+                </div>
+                <!-- <div class="work">
+                    <img src="Images/location.jpeg">
+                    <div class="layer">
+                    <h3>Location Tracker</h3>
+                    <p>a chrome extension to track your location and date you where in.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title con">Conatct Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>ovayosiyasangatshazibana@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>0768368692</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/OvayoSiyanga"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ovayo-siyasanga-tshazibana-206447281"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!-- <a href="" class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name " required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Meassage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy</p>
+            </a>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
